@@ -1,0 +1,12 @@
+<%
+Set MyDirectory=Server.CreateObject("Scripting.FileSystemObject")
+Set MyFiles=MyDirectory.GetFolder(Server.MapPath("/eworld"))
+For each filefound in MyFiles.files
+%>
+
+<% =filefound.Name %><br>
+
+<%
+Next
+%>
+

@@ -1,0 +1,4 @@
+<%
+Set fs = CreateObject("Scripting.FileSystemObject")
+fs.MoveFolder "d:\vb" , "d:\VisualBasic"
+%>

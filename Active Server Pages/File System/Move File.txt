@@ -1,0 +1,4 @@
+<%
+Set fs = CreateObject("Scripting.FileSystemObject")
+fs.MoveFile "d:\ramesh.html" , "d:\ramesh_thiru.html"
+%>

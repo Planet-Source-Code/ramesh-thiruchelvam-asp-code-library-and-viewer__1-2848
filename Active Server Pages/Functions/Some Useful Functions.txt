@@ -1,0 +1,32 @@
+FormatNumber(Expression, NumDigitsAfterDecimal, IncludeLeadingDigit, UserParensForNegativeNumbers, GroupDigits)
+Returns an expression formatted as a number. 
+
+FormatPercent(Expression, NumDigitsAfterDecimal, IncludeLeadingDigit, UserParensForNegativeNumbers, GroupDigits) 
+Returns an expression formatted as a percentage (multiplied by 100) with a trailing % character.
+
+FormatCurrency(Expression, NumDigitsAfterDecimal, IncludeLeadingDigit, UserParensForNegativeNumbers, GroupDigits)
+Returns an expression formatted as a currency value
+
+FormatDateTime(Date, FormatType)
+Returns an expression formatted as a date or time. 
+
+LTrim(string)
+Returns a string without leading spaces
+
+RTrim(string)
+Returns a string without trailing spaces
+
+Trim(string)
+Returns a string without leading and trailing spaces
+
+Len(string)
+Returns the length of the specified string.
+
+Left(string, length)
+Returns a specified number of characters from the left side of a string.
+
+Right(string, length)
+Returns a specified number of characters from the right side of a string.
+
+Mid(string, start, length)
+Returns a specified number of characters from a string.

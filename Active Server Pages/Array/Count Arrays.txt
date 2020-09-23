@@ -1,0 +1,10 @@
+<%
+Dim OneDimArray(4)
+OneDimArray(0) = "Hello,"
+OneDimArray(1) = "It's"
+OneDimArray(2) = "Me"
+OneDimArray(3) = "Ramesh !"
+
+Response.Write ubound(OneDimArray)
+%>
+

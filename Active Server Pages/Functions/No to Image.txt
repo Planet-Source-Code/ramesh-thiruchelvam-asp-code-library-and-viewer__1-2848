@@ -1,0 +1,11 @@
+<%
+function imgno(no)
+l=len(no)
+i = 1
+for i = i to l
+num = mid(no,i,1)
+display = display & "<img src=/images/counter/b" &  num & ".gif>"
+next
+response.write display
+end function
+%> 

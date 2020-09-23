@@ -1,0 +1,13 @@
+<% ID = 3 %>
+
+<% 
+Set Conn = Server.CreateObject("ADODB.Connection")
+Set Rs = Server.CreateObject("ADODB.Recordset")
+    
+Conn.Open "DBQ=" & Server.Mappath("db.mdb") & ";Driver={Microsoft Access Driver (*.mdb)};"
+    
+SQL = "DELETE FROM tbl WHERE (fldAuto = " & ID & ")"
+    
+rs.Open SQL, Conn
+%>
+ 

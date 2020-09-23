@@ -1,0 +1,7 @@
+Function FormatStr(String)
+    on Error resume next
+    String = Replace(String, CHR(13), "")
+    String = Replace(String, CHR(10) & CHR(10), "</P><P>")
+    String = Replace(String, CHR(10), "<BR>")
+    FormatStr = String
+End Function

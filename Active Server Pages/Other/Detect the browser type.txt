@@ -1,0 +1,17 @@
+Browser type !
+<%=Server.CreateObject("MSWC.BrowserType").Browser%>
+
+Browser Version !
+<%=Server.CreateObject("MSWC.BrowserType").Version%>
+
+Supports cookies or not !
+<%=Server.CreateObject("MSWC.BrowserType").Cookies%><
+
+Supports VBScript or not !
+<%=Server.CreateObject("MSWC.BrowserType").VBScript%>
+
+Supports JavaScript or not !
+<%=Server.CreateObject("MSWC.BrowserType").JavaScript%>
+
+Supports Frames or not !
+<%=Server.CreateObject("MSWC.BrowserType").Frames%>

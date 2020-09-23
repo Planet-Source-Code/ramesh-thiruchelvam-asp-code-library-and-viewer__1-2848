@@ -1,0 +1,6 @@
+<%
+function chkstring(string)
+if string = "" then string = " "
+chkstring = replace(string, "'", "''")
+end function
+%> 
