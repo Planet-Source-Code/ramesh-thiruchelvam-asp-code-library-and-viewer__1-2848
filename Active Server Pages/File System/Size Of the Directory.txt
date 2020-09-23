@@ -1,0 +1,8 @@
+<%
+Set MyFileSize = Server.CreateObject ("Scripting.FileSystemObject")
+MyPath = Server.MapPath("/somedirectory")
+Set MyFolder = MyFileSize.GetFolder(MyPath)
+%>
+
+<p><% =MyPath %> is <% =MyFolder.Size %> bytes</p>
+

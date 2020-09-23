@@ -1,0 +1,14 @@
+<% 
+Set Conn = Server.CreateObject("ADODB.Connection")
+Set Rs = Server.CreateObject("ADODB.Recordset")
+    
+Conn.Open "DefaultDir=c:\inetpub\wwwroot\ms_text;Driver={Microsoft Text Driver (*.txt; *.csv)};Extensions=txt,csv,tab,asc;" 
+    
+SQL = "SELECT fldAuto, fldName, fldEmail FROM db.csv WHERE (fldName = '" & varName & "')"
+    
+rs.Open SQL, Conn
+%>
+
+<%= rs("fldAuto") %><br>
+<%= rs("fldName") %><br>
+<%= rs("fldEmail") %><br>

@@ -1,0 +1,4 @@
+<%
+Set fs = CreateObject("Scripting.FileSystemObject")
+fs.CopyFolder "d:\db" , "d:\clock"
+%>

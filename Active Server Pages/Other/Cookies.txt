@@ -1,0 +1,16 @@
+Placing Cookies
+<%
+Response.Cookies("name").Expires = Date + 7
+'Response.Cookies("name").Expires = #January 01, 1999# 
+'Response.Cookies("name").Secure = True 
+Response.Cookies("name").Path = "/ramesh" 
+Response.Cookies("name").Domain = "ramesh.ourfamily.com" 
+Response.Cookies("name") = "Ramesh Thiruchelvam"
+'Response.Cookies("name")("first") = "Ramesh"
+'Response.Cookies("name")("last") = "Thiruchelvam"
+%>
+
+Reading Cookies
+<%
+Response.write request.Cookies("name")
+%> 

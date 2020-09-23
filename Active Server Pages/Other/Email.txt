@@ -1,0 +1,15 @@
+<%
+Dim objCDO
+Set objCDO = Server.CreateObject("CDONTS.NewMail")
+
+objCDO.To = "ramesh@huiyang.net"
+objCDO.From = "neethan@home.com"
+objCDO.cc = "ramesh_thiru@yahoo.com,ramesh_thiru@hotmail.com"
+
+objCDO.Importance = 2 '0 - Low, 1 - Normal, 2 - High
+objCDO.Subject = "Song admin page"
+objCDO.AttachFile ("c:\neethan\new.jpg","new.jpg")
+objCDO.Body = "Hey it's ok now ! I can add new songes ..." 
+objCDO.Send
+%> 
+

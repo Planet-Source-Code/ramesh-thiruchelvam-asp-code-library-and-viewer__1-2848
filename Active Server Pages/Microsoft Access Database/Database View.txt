@@ -1,0 +1,17 @@
+<% varName = "Ramesh Thiruchelvam" %>
+
+<% 
+Set Conn = Server.CreateObject("ADODB.Connection")
+Set Rs = Server.CreateObject("ADODB.Recordset")
+    
+Conn.Open "DBQ=" & Server.Mappath("db.mdb") & ";Driver={Microsoft Access Driver (*.mdb)};"
+    
+SQL = "SELECT fldAuto, fldName, fldEmail FROM tbl WHERE (fldName = '" & varName & "')"
+    
+rs.Open SQL, Conn
+%>
+
+<%= rs("fldAuto") %><br>
+<%= rs("fldName") %><br>
+<%= rs("fldEmail") %><br>
+
